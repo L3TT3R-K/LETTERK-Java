@@ -1,27 +1,51 @@
+<p align="center">
+  <a href="https://www.uit.edu.vn/" title="Trường Đại học Công nghệ Thông tin" style="border: 5;">
+    <img src="https://i.imgur.com/WmMnSRt.png" alt="Trường Đại học Công nghệ Thông tin | University of Information Technology">
+  </a>
+</p>
 
-# Introduction
-This repository contains the Java assignment of our group.  
-The project is developed using **Java** and managed with **GitHub** for collaboration between team members.
+<!-- Title -->
+<h1 align="center"><b>IS201 - LẬP TRÌNH JAVA</b></h1>
 
-## Technologies Used
-- Java
-- Eclipse/ Netbeans/ Intellij IDE
-- Git & GitHub for version control
 
-## Team Members
-- Member 1: Tang Anh Khoi
-- Member 2: Nguyen Trung Kien
-- Member 3: Nguyen The Khanh
-- Member 4: Pham Hao Kiet
 
-## Purpose of the Project
-- Practice Java programming
-- Learn how to use **Git and GitHub for teamwork**
+## BẢNG MỤC LỤC
+* [ Giới thiệu môn học](#gioithieumonhoc)
+* [ Giảng viên hướng dẫn](#giangvien)
+* [ Thành viên nhóm](#thanhvien)
+* [ Seminar](#seminar)
+* [ Đồ án môn học](#doan)
 
-## Notes
-Each team member should:
-- Pull the latest code before working
-- Commit with clear messages
-- Push changes to the shared repository
 
-### © 2026 Letter K
+## GIỚI THIỆU MÔN HỌC
+<a name="gioithieumonhoc"></a>
+* **Tên môn học**: Lập trình Java
+* **Mã môn học**: IS216
+* **Lớp học**: IS216.Q23
+* **Năm học**: 2025-2026
+
+
+## GIẢNG VIÊN HƯỚNG DẪN
+<a name="giangvien"></a>
+* ThS. **Tạ Việt Phương** - *phuongtv@uit.edu.vn*
+
+
+
+## THÀNH VIÊN NHÓM
+<a name="thanhvien"></a>
+| STT | MSSV     | Họ và Tên         | Github                                      | Email                  |
+| --- | -------- | ----------------- | ------------------------------------------- | ---------------------- |
+| 1   | 24520795 | Nguyễn Thế Khánh  | [Khanh](https://github.com/thekhanh1308)    | 24520795@gm.uit.edu.vn |
+| 2   | 24520887 | Nguyễn Trung Kiên | [Kien](https://github.com/24520887-TKNguyen) | 24520887@gm.uit.edu.vn |
+| 3   | 24520868 | Tăng Anh Khôi     | [Khoi](https://github.com/khoitang-tech)    | 24520868@gm.uit.edu.vn |
+| 4   | 24520909 | Phạm Hào Kiệt     | [Kiet](https://github.com/KeanuPham25)      | 24520909@gm.uit.edu.vn |
+
+
+## SEMINAR
+<a name="seminar"></a>
+Seminar nhóm: Kotlin vs Java
+
+
+## ĐỒ ÁN MÔN HỌC
+<a name="doan"></a>
+Đồ án Nhóm: Hệ thống bán vé xe khách online
