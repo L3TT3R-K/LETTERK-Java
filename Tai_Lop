@@ -1,0 +1,225 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+    public static void ChuVi(){
+        System.out.println("Nhap ban kinh duong tron");
+        double a = sc.nextDouble();
+        System.out.println("Chu vi duong tron la: " + (2 * Math.PI * a));
+    } //1
+
+    public static void Chia(){
+        System.out.println("Nhap 2 so a, b: ");
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        while(b == 0){
+            System.out.println("b can khac 0, nhap lai: ");
+            b = sc.nextDouble();
+        }
+        System.out.printf("%.3f\n", a / b);
+    } //2
+
+
+    public static int UCLN(int a, int b){
+        a = Math.abs(a);
+        b = Math.abs(b);
+        while(b != 0){
+            int r = a % b;
+            a = b;
+            b = r;
+        }
+        return a;
+    }
+    public static void inKetQua(int tu, int mau){
+        int g = UCLN(tu, mau);
+        tu /= g;
+        mau /= g;
+        if(mau < 0){
+            tu = -tu;
+            mau = -mau;
+        }
+        if(tu % mau == 0){
+            System.out.println(tu / mau);
+        } else {
+            System.out.println(tu + "/" + mau);
+        }
+    }
+    public static void PhanSo(){
+        System.out.println("Nhap phan so thu nhat: ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        while(b == 0){
+            System.out.println("Nhap lai mau so: ");
+            b = sc.nextInt();
+        }
+        System.out.println("Nhap phan so thu hai: ");
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        while(d == 0){
+            System.out.println("Nhap lai mau so: ");
+            d = sc.nextInt();
+        }
+        System.out.println("Tong hai phan so: ");
+        inKetQua(a*d + b*c, b*d);
+        System.out.println("Hieu hai phan so: ");
+        inKetQua(a*d - b*c, b*d);
+        System.out.println("Tich hai phan so: ");
+        inKetQua(a*c, b*d);
+        System.out.println("Thuong hai phan so: ");
+        if(c == 0){
+            System.out.println("Khong the chia");
+        }
+        else
+        inKetQua(a*d, b*c);
+    } //3
+
+    public static void Chuoi(){
+        sc.nextLine();
+        System.out.println("Nhap hai chuoi x va y ");
+        String x = sc.nextLine();
+        String y = sc.nextLine();
+        System.out.println("Chieu dai chuoi x: " + x.length());
+        if(x.length() >= 3) System.out.println("3 ki tu dau cua x: " + x.substring(0,3));
+        else System.out.println("Chuoi x khong du 3 ky tu");
+        if(x.length() >= 3) System.out.println("3 ki tu cuoi cua x: " + x.substring(x.length() - 3));
+        else System.out.println("Chuoi x khong du 3 ky tu");
+        if(x.length() >= 6) System.out.println("Ky tu thu 6 cua x: " + x.charAt(5));
+        else System.out.println("Chuoi x khong du 6 ky tu");
+        if(x.length() >= 3 && y.length() >= 3){
+            String a = x.substring(0, 3);
+            System.out.println("Chuoi moi: " + a + y.substring(y.length() - 3));
+        }
+        else System.out.println("Khong du 3 ky tu de tao chuoi moi");
+        if(x.equals(y)) System.out.println("Hai chuoi bang nhau");
+        else System.out.println("Hai chuoi khong bang nhau");
+        if(x.equalsIgnoreCase(y)) System.out.println("Hai chuoi bang nhau(khong phan biet hoa thuong)");
+        else System.out.println("Hai chuoi khong bang nhau(khong phan biet hoa thuong)");
+        int pos = x.indexOf(y);
+        if(pos != -1) System.out.println("y xuat hien trong x tai vi tri: " + pos);
+        else System.out.println("y khong xuat hien trong x");
+        System.out.print("Cac vi tri xuat hien cua y trong x: ");
+        if(pos == -1) System.out.println("Khong co");
+        else{
+                while (pos != -1) {
+                    System.out.print(pos + " ");
+                    pos = x.indexOf(y, pos + 1);
+                }
+            }
+    } //4
+
+    public static void Dien(){
+        System.out.println("Nhap so dien su dung cua thang");
+        double a = sc.nextDouble();
+        double TienDien = 0;
+        if (a <= 50) {
+            TienDien = a * 2000;
+        }
+        else if (a <= 100) {
+            TienDien = 50 * 2000 + (a - 50) * 2500;
+        }
+        else {
+            TienDien = 50 * 2000 + 50 * 2500 + (a - 100) * 3500;
+        }
+        System.out.println("Tien dien phai tra: " + TienDien);
+    } //5
+
+    public static void Menu(){
+        int a;
+        do {
+            System.out.println("##################################\n" +
+                    "1. Bài 1\n" +
+                    "2. Bài 2\n" +
+                    "3. Bài 3\n" +
+                    "4. Bài 4\n" +
+                    "5. Bài 5\n" +
+                    "6. Thoát\n" +
+                    "##################################\n" +
+                    "Chọn chức năng: _\n");
+            a = sc.nextInt();
+            switch (a) {
+                case 1:
+                    ChuVi();
+                    break;
+                case 2:
+                    Chia();
+                    break;
+                case 3:
+                    PhanSo();
+                    break;
+                case 4:
+                    Chuoi();
+                    break;
+                case 5:
+                    Dien();
+                    break;
+                case 6:
+                    System.out.println("Thoat chuong trinh");
+                    break;
+                default:
+                    System.out.println("Lua chon khong hop le!");
+            }
+            System.out.println();
+        } while(a != 6);
+    } //6
+
+    public static void Prime(){
+        System.out.println("Nhap so nguyen duong: ");
+        int a = sc.nextInt();
+        while(a < 0){
+            System.out.println("Can nhap so nguyen duong, nhap lai: ");
+            a = sc.nextInt();
+        }
+        boolean ok = true;
+        if(a < 2) ok = false;
+        else {
+            for (int i = 2; i <= Math.sqrt(a); i++) {
+                if (a % i == 0){
+                    ok = false;
+                    break;
+                }
+            }
+        }
+        if(ok) System.out.println(a + " la so nguyen to");
+        else System.out.println(a + " khong phai la so nguyen to");
+    } //7
+
+    public static void Mang(){
+        System.out.println("Nhap so phan tu cua mang: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0 ; i < n ; i++){
+             int x = sc.nextInt();
+             arr[i] = x;
+        }
+        System.out.print("Mang vua nhap: " + Arrays.toString(arr));
+        System.out.println();
+        int mmax = -1000000000;
+        int mmin = 1000000000;
+        for(int i = 0 ; i < n ; i++){
+            mmax = Math.max(arr[i], mmax);
+            mmin = Math.min(arr[i], mmin);
+        }
+        System.out.println("Phan tu lon nhat trong mang: " + mmax);
+        System.out.println("Phan tu nho nhat trong mang: " + mmin);
+        System.out.println("Nhap mot so: ");
+        int x = sc.nextInt();
+        Arrays.sort(arr);
+        int pos = Arrays.binarySearch(arr, x);
+        if(pos >= 0){
+            System.out.println(x + " co trong mang");
+        }
+        else System.out.println(x + " khong nam trong mang");
+        System.out.println("Nhap mot so: ");
+        x = sc.nextInt();
+        int dem = 0;
+        for(int pt : arr){
+            if(x == pt) dem++;
+        }
+        System.out.println("Co " + dem + " phan tu co gia tri bang " + x + " trong mang");
+        Arrays.sort(arr);
+        System.out.println("Mang sau khi sap xep tang dan");
+        System.out.println(Arrays.toString(arr));
+    }
+}
