@@ -32,3 +32,4 @@ public abstract class KhachHang {
     
     public abstract void xuatThongTin();
 }
+// test
