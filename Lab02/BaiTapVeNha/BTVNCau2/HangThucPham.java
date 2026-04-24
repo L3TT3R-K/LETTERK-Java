@@ -1,6 +1,6 @@
 package Lab02.BaiTapVeNha.BTVNCau2;
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
+
 public class HangThucPham extends HangHoa {
     private static final double THUE_VAT = 0.05;
 

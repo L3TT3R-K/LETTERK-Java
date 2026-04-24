@@ -1,5 +1,4 @@
-package hangdienmay;
-import hanghoa.HangHoa;
+package Lab02.BaiTapVeNha.BTVNCau2;
 
 public class HangDienMay extends HangHoa {
     private static final double THUE_VAT = 0.10; 
