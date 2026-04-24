@@ -1,7 +1,6 @@
-package quanlysieuthi;
+package Lab02.BaiTapVeNha.BTVNCau2;
 import java.util.ArrayList;
-import hangdienmay.HangDienMay;
-import hanghoa.HangHoa;
+
 
 public class QuanLySieuThi {
     private ArrayList<HangHoa> danhSachHangHoa;

@@ -1,10 +1,6 @@
-package main;
+package Lab02.BaiTapVeNha.BTVNCau2;
 import java.time.LocalDate;
 
-import hangdienmay.HangDienMay;
-import hanggiadung.HangGiaDung;
-import hangthucpham.HangThucPham;
-import quanlysieuthi.QuanLySieuThi;
 
 public class Main {
     public static void main(String[] args) {

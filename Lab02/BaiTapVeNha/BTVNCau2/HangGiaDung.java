@@ -1,7 +1,7 @@
-package hanggiadung;
+package Lab02.BaiTapVeNha.BTVNCau2;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
-import hanghoa.HangHoa;
+
 
 public class HangGiaDung extends HangHoa {
     private static final double THUE_VAT = 0.10;

@@ -1,4 +1,4 @@
-package hanghoa;
+package Lab02.BaiTapVeNha.BTVNCau2;
 
 public abstract class HangHoa {
     protected String maHang;
