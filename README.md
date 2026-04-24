@@ -48,4 +48,4 @@ Seminar nhóm: Kotlin vs Java
 
 ## ĐỒ ÁN MÔN HỌC
 <a name="doan"></a>
-Đồ án Nhóm: Hệ thống bán vé xe khách online
+Đồ án Nhóm: [Hệ thống bán vé xe khách online](https://github.com/L3TT3R-K/Online-Bus-Ticket-System)
